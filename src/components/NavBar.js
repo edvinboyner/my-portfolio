@@ -33,7 +33,7 @@ export default function NavBar(){
 
                     <SocialIcon url={pdf}  className="display: inline-block mr-4" target="_blank" bgColor="#303030" fgColor="#ffffff" style={{height: 35, width: 35}}/>
       
-                    <SocialIcon url="edvin@boyner.se" network="email" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}} />
+                    <SocialIcon url="mailto:edvin@boyner.se" network="email" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}} />
                     {/* <a target="_blank" href={pdf}>Click here for my pdf</a> */}
                 </div>
             </div>
