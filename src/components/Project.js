@@ -25,7 +25,7 @@ export default function Project(){
            <img src={image} alt="Space" className="absolute object-cover w-full h-full" />
            <section className="container mx-auto">
                <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
-               <h2 className="text-lg text-gray-600 flex justify-center mb-12"></h2>
+               {/* <h2 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my projects page!</h2> */}
                <section className="grid grid-cols-2 gap-8">
                    {projectData && 
                    projectData.map((project, index) => (                   <article className="relative rounder-lg mr-24 shadow-xl bg-white rounded-2xl opacity-60 p-16">
