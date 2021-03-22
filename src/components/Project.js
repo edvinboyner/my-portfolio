@@ -28,7 +28,8 @@ export default function Project(){
                {/* <h2 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my projects page!</h2> */}
                <section className="grid grid-cols-2 gap-8">
                    {projectData && 
-                   projectData.map((project, index) => (                   <article className="relative rounder-lg mr-24 shadow-xl bg-white rounded-2xl opacity-60 p-16">
+                   projectData.map((project, index) => (                   
+                   <article className="relative rounder-lg mr-24 shadow-xl bg-gray-200 rounded-2xl opacity-60 p-16">
                        <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-gray-500">
                            <a
                            href={project.link}
@@ -39,7 +40,7 @@ export default function Project(){
                                {project.title}
                            </a>
                        </h3>
-                       <div className="text-gray-500 text-xs space-x-4">
+                       <div className="text-gray-700 text-xs space-x-4">
                            <span>
                                <strong className="font-bold">Finished on</strong>:{" "}
                                {new Date(project.date).toLocaleDateString()}
