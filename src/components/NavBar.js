@@ -6,24 +6,24 @@ import pdf from '../pdf/Edvin_CV_svenska.pdf'
 
 export default function NavBar(){
     return (
-        <header className="bg-gray-800 ">
-            <div className="container mx-auto flex justify-between">
+        <header className="bg-black ">
+            <div className="container mx-auto flex justify-between ">
                 <nav className="flex">
                     <NavLink to="/" exact 
                     activeClassName="text-white"
-                    className="inflex-flex items-center py-7 px-4 mr-4 text-gray-600 hover:text-gray-200 text-4xl cursive tracking-widest">
+                    className="inflex-flex items-center py-3 px-4 mr-4 my-6 text-gray-600 hover:text-gray-200 text-4xl cursive tracking-widest">
                         Edvin
                     </NavLink>
                     <NavLink to="/post" activeClassName="text-white"
-                    className="inflex-flex items-center py-4 px-3 my-6 rounded text-gray-600 hover:text-gray-200">
+                    className="inflex-flex items-center py-3 px-3 my-8 rounded text-gray-600 hover:text-gray-200">
                         Posts
                     </NavLink>
                     <NavLink to="/project" activeClassName="text-white"
-                    className="inflex-flex items-center py-4 px-3 my-6 rounded text-gray-600 hover:text-gray-200">
+                    className="inflex-flex items-center py-3 px-3 my-8 rounded text-gray-600 hover:text-gray-200">
                         Projects
                     </NavLink>
                     <NavLink to="/about" activeClassName="text-white"
-                    className="inflex-flex items-center py-4 px-3 my-6 rounded text-gray-600 hover:text-gray-200">
+                    className="inflex-flex items-center py-3 px-3 my-8 rounded text-gray-600 hover:text-gray-200">
                         About Me
                     </NavLink>
                 </nav>

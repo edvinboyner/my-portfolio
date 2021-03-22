@@ -1,6 +1,7 @@
 import React, { useEffect, useState }from "react";
 import sanityClient from "../client.js"
 import image from "../img/Pic.jpg"
+import Home from "../components/Home"
 
 export default function Project(){
     const [projectData, setProjectData] = useState(null); 
@@ -11,7 +12,7 @@ export default function Project(){
         .fetch(`*[_type == "project"]{
             title,
             date,
-            pleace,
+            place,
             description,
             projectType,
             link,
@@ -23,14 +24,15 @@ export default function Project(){
     return (
         <main className="fixed h-full w-full">
            <img src={image} alt="Space" className="absolute object-cover w-full h-full" />
+                     {/* <Home /> */}
            <section className="container mx-auto">
                <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
                {/* <h2 className="text-lg text-gray-600 flex justify-center mb-12">Welcome to my projects page!</h2> */}
                <section className="grid grid-cols-2 gap-8">
                    {projectData && 
                    projectData.map((project, index) => (                   
-                   <article className="relative rounder-lg mr-24 shadow-xl bg-gray-200 rounded-2xl opacity-60 p-16">
-                       <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-gray-500">
+                   <article className="border-l-8 border-gray-700 relative rounder-lg mr-24 shadow-xl bg-gray-200 rounded-2xl opacity-60 p-16">
+                       <h3 className=" text-gray-800 text-3xl font-bold mb-2 hover:text-gray-500">
                            <a
                            href={project.link}
                            alt={project.title}
@@ -40,7 +42,7 @@ export default function Project(){
                                {project.title}
                            </a>
                        </h3>
-                       <div className="text-gray-700 text-xs space-x-4">
+                       <div className=" text-gray-700 text-xs space-x-4">
                            <span>
                                <strong className="font-bold">Finished on</strong>:{" "}
                                {new Date(project.date).toLocaleDateString()}
