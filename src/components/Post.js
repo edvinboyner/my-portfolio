@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
-import image from "../img/Space.jpg"
+import image from "../img/Pic.jpg"
 import sanityClient from "../client.js";
 
 export default function Post(){
@@ -25,7 +25,7 @@ export default function Post(){
 
     
     return(
-        <main>
+        <main className="fixed h-full w-full">
             <img src={image} alt="Space" className="absolute object-cover h-full w-full" />
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center cursive">Blog Posts Page</h1>

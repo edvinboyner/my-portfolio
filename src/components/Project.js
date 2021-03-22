@@ -1,6 +1,6 @@
 import React, { useEffect, useState }from "react";
 import sanityClient from "../client.js"
-import image from "../img/Space.jpg"
+import image from "../img/Pic.jpg"
 
 export default function Project(){
     const [projectData, setProjectData] = useState(null); 
@@ -21,7 +21,7 @@ export default function Project(){
     }, []);
 
     return (
-       <main>
+        <main className="fixed h-full w-full">
            <img src={image} alt="Space" className="absolute object-cover w-full h-full" />
            <section className="container mx-auto">
                <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
