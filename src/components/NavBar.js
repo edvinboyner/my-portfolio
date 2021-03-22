@@ -14,10 +14,10 @@ export default function NavBar(){
                     className="inflex-flex items-center py-3 px-4 mr-4 my-6 text-gray-600 hover:text-gray-200 text-4xl cursive tracking-widest">
                         Edvin
                     </NavLink>
-                    <NavLink to="/post" activeClassName="text-white"
+                    {/* <NavLink to="/post" activeClassName="text-white"
                     className="inflex-flex items-center py-3 px-3 my-8 rounded text-gray-600 hover:text-gray-200">
                         Posts
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink to="/project" activeClassName="text-white"
                     className="inflex-flex items-center py-3 px-3 my-8 rounded text-gray-600 hover:text-gray-200">
                         Projects
