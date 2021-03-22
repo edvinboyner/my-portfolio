@@ -1,6 +1,6 @@
 export default {
-  name: 'post',
-  title: 'Post',
+  name: 'post', //Vi letar efter denna i Post.js
+  title: 'Post', //Post i localhost:3333
   type: 'document',
   fields: [
     {
