@@ -6,7 +6,7 @@ import pdf from '../pdf/Edvin_CV_svenska.pdf'
 
 export default function NavBar(){
     return (
-        <header className="bg-black ">
+        <header className="bg-black">
             <div className="container mx-auto flex justify-between ">
                 <nav className="flex">
                     <NavLink to="/" exact 
@@ -30,9 +30,7 @@ export default function NavBar(){
                 <div className="inline-flex py-3 px-9 my-6">
                     <SocialIcon url="https://www.linkedin.com/in/edvinboyner/" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}} />
                     <SocialIcon url="https://github.com/edvinboyner?tab=repositories" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}} /> 
-
                     <SocialIcon url={pdf}  className="display: inline-block mr-4" target="_blank" bgColor="#303030" fgColor="#ffffff" style={{height: 35, width: 35}}/>
-      
                     <SocialIcon url="mailto:edvin@boyner.se" network="email" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}} />
                     {/* <a target="_blank" href={pdf}>Click here for my pdf</a> */}
                 </div>

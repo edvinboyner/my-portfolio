@@ -22,7 +22,7 @@ export default function Project(){
     }, []);
 
     return (
-        <main className="fixed h-full w-full">
+        <main className="relative h-full w-full">
            <img src={image} alt="Space" className="absolute object-cover w-full h-full" />
                      {/* <Home /> */}
            <section className="container mx-auto">
@@ -59,10 +59,11 @@ export default function Project(){
                                {project.description}
                            </p>
                            <a href={project.link} rel="noopener noreferrer"  target="_blank" className="text-gray-900 font-bold hover:underline hover:text-gray-500">
-                               View The Project{" "}
-                           <span role="img" aria-label="right pointer">Pointer
+                               More Information{" "}
+                           <span role="img" aria-label="right pointer">
                            </span>
                            </a>
+                           
                        </div>
                    </article>
                    ))}
